@@ -1,0 +1,14 @@
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\obj\Debug\net8.0\create-methods-in-console-apps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\obj\Debug\net8.0\create-methods-in-console-apps.AssemblyInfoInputs.cache
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\obj\Debug\net8.0\create-methods-in-console-apps.AssemblyInfo.cs
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\obj\Debug\net8.0\create-methods-in-console-apps.csproj.CoreCompileInputs.cache
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\bin\Debug\net8.0\create-methods-in-console-apps.exe
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\bin\Debug\net8.0\create-methods-in-console-apps.deps.json
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\bin\Debug\net8.0\create-methods-in-console-apps.runtimeconfig.json
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\bin\Debug\net8.0\create-methods-in-console-apps.dll
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\bin\Debug\net8.0\create-methods-in-console-apps.pdb
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\obj\Debug\net8.0\create-methods-in-console-apps.dll
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\obj\Debug\net8.0\refint\create-methods-in-console-apps.dll
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\obj\Debug\net8.0\create-methods-in-console-apps.pdb
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\obj\Debug\net8.0\create-methods-in-console-apps.genruntimeconfig.cache
+C:\Users\cmcgregor\Documents\coding\practice\foundational-C#\create-methods-in-console-apps-module\create-methods-in-console-apps\obj\Debug\net8.0\ref\create-methods-in-console-apps.dll

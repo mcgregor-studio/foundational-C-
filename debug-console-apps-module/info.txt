@@ -1,0 +1,59 @@
+// Testing, debugging, and exception handling are all different things
+// The code below, for example, requires debugging:
+
+string[] students = new string[] {"Sophia", "Nicolas", "Zahirah", "Jeong"};
+
+int studentCount = students.Length;
+
+// Console.WriteLine("The final name is: " + students[studentCount]);
+
+// Generally speaking, the term debugging is reserved for runtime issues that aren't easy to isolate
+// This also means that debugging falls on the developer to do
+// The same is true of exception handling: 
+// These are the warnings and errors that occur during an app's runtime that weren't caught by debugging
+// Exceptions are thrown by code that encounter an error and caught by code that can correct an error
+// Exceptions in C# also have their own class, and you can create different types and access their contents
+
+// In short:
+// - Testing, debugging, and exception handling are all important tasks for software developers.
+// - Testing can be categorized into functional and nonfunctional testing, and developers are expected to perform some level of testing.
+// - Code debugging is the process of isolating issues and identifying ways to fix them, and it's a developer responsibility.
+// - Exception handling is the process of managing errors that occur during runtime, and developers are responsible for handling exceptions by using "try" and "catch" statements in their code.
+// - An exception gets created at runtime when your code produces an error.
+// - The exception can be treated like a variable that has some extra capabilities.
+// - You can write code that accesses the exception and takes corrective action.
+
+// The best way to find those errors is to use a debugger - using Console.WriteLine() throughout the code is a waste of time!'
+
+// VSCode has a C# debugger built into it, which you can access by pressing F5 or going to the Run menu option in the top toolbar and selecting "Start Debugging"
+// The Run menu provides menu options that are grouped into six sections:
+// - Start and stop applications. This section of the menu includes options for starting and stopping code execution, with and without the debugger attached.
+// - Launch configurations. This section of the menu provides access to examine or create launch configurations.
+// - Runtime control. This section of the menu enables the developer to control how they want to advance through the code. Controls are enabled when execution has paused during a debug session.
+// - Set Breakpoints. This section of the menu enables the developer to set breakpoints on code lines. Code execution pauses on Breakpoints during a debug session.
+// - Manage Breakpoints. This section of the menu enables the developer to manage breakpoints in bulk rather than individually.
+// - Install Debuggers. This section of the menu opens the Visual Studio Code EXTENSIONS view filtered for code debuggers.
+
+// The RUN AND DEBUG view provides access to runtime tools that can be invaluable during the debug process.
+// - Run and Debug controls panel. Used to configure and start a debug session.
+// - VARIABLES section. Used to view and manage variable state during a debug session.
+// - WATCH section. Used to monitor variables or expressions. For example, you could configure an expression using one or more variables and watch it to see when a particular condition is met.
+// - CALL STACK section. Used to keep track of the current point of execution within the running application, starting with the initial point of entry into the application. The call stack shows which method is currently being executed, as well as the method or methods in the execution path that led to the current point of execution (current line of code).
+// - BREAKPOINTS section. Displays the current breakpoint settings.
+// - Debug toolbar. Used to control code execution during the debug process. This toolbar is only displayed while the application is running.
+// - Current execution step. Used to identify the current execution step by highlighting it in the Editor. In this case, the current execution step is a breakpoint (breakpoints are marked with a red dot to the left of the line number).
+// - DEBUG CONSOLE. Used to display messages from the debugger. The DEBUG CONSOLE panel is the default console for console applications and is able to display output from Console.WriteLine() and related Console output methods.
+
+// At the top of the RUN AND DEBUG view, you can find the launch controls:
+// - Start debugging. This button (a green arrow) is used to start a debug session.
+// - Launch configurations. This dropdown menu provides access to launch configurations. The selected option is displayed.
+// - Open 'launch.json'. This button (a gear shape) can be used to open the launch.json file, where you can edit the launch configuration if needed.
+// - Views and More Actions. This button (an ellipsis) enables you to show/hide sections of the debug panel as well as the DEBUG CONSOLE panel.
+
+// The Debug toolbar provides execution controls while your application is running:
+// - Pause/Continue. This button can be used to pause execution when the code is running and Continue when code execution has been paused.
+// - Step Over. This button can be used to execute the next method as a single command without inspecting or following its component steps.
+// - Step Into. This button can be used to enter the next method or code line and observe line-by-line execution steps.
+// - Step Out. When inside a method, this button can be used to return to the earlier execution context by completing all remaining lines of the current method as though they were a single command.
+// - Restart. This button can be used to terminate the current program execution and start debugging again using the current configuration.
+// - Stop. This button can be used to terminate the current program execution.

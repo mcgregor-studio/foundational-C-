@@ -1,0 +1,14 @@
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\bin\Debug\net8.0\guided-project-petting-zoo.exe
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\bin\Debug\net8.0\guided-project-petting-zoo.deps.json
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\bin\Debug\net8.0\guided-project-petting-zoo.runtimeconfig.json
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\bin\Debug\net8.0\guided-project-petting-zoo.dll
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\bin\Debug\net8.0\guided-project-petting-zoo.pdb
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\obj\Debug\net8.0\guided-project-petting-zoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\obj\Debug\net8.0\guided-project-petting-zoo.AssemblyInfoInputs.cache
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\obj\Debug\net8.0\guided-project-petting-zoo.AssemblyInfo.cs
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\obj\Debug\net8.0\guided-project-petting-zoo.csproj.CoreCompileInputs.cache
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\obj\Debug\net8.0\guided-project-petting-zoo.dll
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\obj\Debug\net8.0\refint\guided-project-petting-zoo.dll
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\obj\Debug\net8.0\guided-project-petting-zoo.pdb
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\obj\Debug\net8.0\guided-project-petting-zoo.genruntimeconfig.cache
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\create-methods-in-console-apps-module\guided-project-petting-zoo\obj\Debug\net8.0\ref\guided-project-petting-zoo.dll

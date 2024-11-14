@@ -1,0 +1,14 @@
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\obj\Debug\net8.0\work-with-variable-data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\obj\Debug\net8.0\work-with-variable-data.AssemblyInfoInputs.cache
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\obj\Debug\net8.0\work-with-variable-data.AssemblyInfo.cs
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\obj\Debug\net8.0\work-with-variable-data.csproj.CoreCompileInputs.cache
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\bin\Debug\net8.0\work-with-variable-data.exe
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\bin\Debug\net8.0\work-with-variable-data.deps.json
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\bin\Debug\net8.0\work-with-variable-data.runtimeconfig.json
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\bin\Debug\net8.0\work-with-variable-data.dll
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\bin\Debug\net8.0\work-with-variable-data.pdb
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\obj\Debug\net8.0\work-with-variable-data.dll
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\obj\Debug\net8.0\refint\work-with-variable-data.dll
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\obj\Debug\net8.0\work-with-variable-data.pdb
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\obj\Debug\net8.0\work-with-variable-data.genruntimeconfig.cache
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-c#\work-with-variable-data-module\work-with-variable-data\obj\Debug\net8.0\ref\work-with-variable-data.dll

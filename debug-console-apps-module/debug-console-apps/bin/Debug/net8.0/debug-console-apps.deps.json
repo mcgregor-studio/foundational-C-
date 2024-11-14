@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "debug-console-apps/1.0.0": {
+        "runtime": {
+          "debug-console-apps.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "debug-console-apps/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

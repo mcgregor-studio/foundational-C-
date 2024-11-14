@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "work-with-variable-data/1.0.0": {
+        "runtime": {
+          "work-with-variable-data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "work-with-variable-data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

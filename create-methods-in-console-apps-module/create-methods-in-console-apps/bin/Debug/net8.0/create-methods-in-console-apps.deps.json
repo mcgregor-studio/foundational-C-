@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "create-methods-in-console-apps/1.0.0": {
+        "runtime": {
+          "create-methods-in-console-apps.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "create-methods-in-console-apps/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
