@@ -1,9 +1,9 @@
 ﻿// Testing, debugging, and exception handling are all different things
 // The code below, for example, requires debugging:
 
-string[] students = new string[] {"Sophia", "Nicolas", "Zahirah", "Jeong"};
+// string[] students = new string[] { "Sophia", "Nicolas", "Zahirah", "Jeong" };
 
-int studentCount = students.Length;
+// int studentCount = students.Length;
 
 // Console.WriteLine("The final name is: " + students[studentCount]);
 
@@ -69,35 +69,35 @@ int studentCount = students.Length;
 
 // Example debugging code - using a names array and corresponding methods to display greeting messages:
 
-string[] names = new string[] { "Sophia", "Andrew", "AllGreetings" };
+// string[] names = new string[] { "Sophia", "Andrew", "AllGreetings" };
 
-string messageText = "";
+// string messageText = "";
 
-foreach (string name in names)
-{
-    if (name == "Sophia")
-        messageText = SophiaMessage();
-    else if (name == "Andrew")
-        messageText = AndrewMessage();
-    else if (name == "AllGreetings")
-        messageText = SophiaMessage();
-        messageText = messageText + "\n\r" + AndrewMessage();
+// foreach (string name in names)
+// {
+//     if (name == "Sophia")
+//         messageText = SophiaMessage();
+//     else if (name == "Andrew")
+//         messageText = AndrewMessage();
+//     else if (name == "AllGreetings")
+//         messageText = SophiaMessage();
+//     messageText = messageText + "\n\r" + AndrewMessage();
 
-    Console.WriteLine(messageText + "\n\r");
-}
+//     Console.WriteLine(messageText + "\n\r");
+// }
 
-bool pauseCode = true;
-while (pauseCode == true);
+// // bool pauseCode = true;
+// // while (pauseCode == true);
 
-static string SophiaMessage()
-{
-    return "Hello, my name is Sophia.";
-}
+// static string SophiaMessage()
+// {
+//     return "Hello, my name is Sophia.";
+// }
 
-static string AndrewMessage()
-{
-    return "Hi, my name is Andrew. Good to meet you.";
-}
+// static string AndrewMessage()
+// {
+//     return "Hi, my name is Andrew. Good to meet you.";
+// }
 
 // Your launch and tasks.json files are important too - they handle how your debugger is configured:
 // - name: The reader-friendly name assigned to the launch configuration
@@ -115,3 +115,176 @@ static string AndrewMessage()
 // You can configure multiple projects in one folder with one launch.json & tasks.json - they can support multiple configurations
 // Once you've done so, you can choose which project to debug with the dropdown in the Run & Debug sidebar section
 
+// Example code to show how conditional breakpoints can be used:
+
+// int productCount = 2000;
+// string[,] products = new string[productCount, 2];
+
+// LoadProducts(products, productCount);
+
+// for (int i = 0; i < productCount; i++)
+// {
+//     string result;
+//     result = Process1(products, 1);
+
+//     if (result != "obsolete")
+//     {
+//         result = Process2(products, i);
+//     }
+// }
+
+// bool pauseCode = true;
+// while (pauseCode == true);
+
+// static void LoadProducts(string[,] products, int productCount)
+// {
+//     Random rand = new Random();
+
+//     for (int i = 0; i < productCount; i++)
+//     {
+//         int num1 = rand.Next(1, 10000) + 10000;
+//         int num2 = rand.Next(1, 101);
+
+//         string prodID = num1.ToString();
+
+//         if (num2 < 91)
+//         {
+//             products[i, 1] = "existing";
+//         }
+//         else if (num2 == 91)
+//         {
+//             products[i, 1] = "new";
+//             prodID = prodID + "-n";
+//         }
+//         else
+//         {
+//             products[i, 1] = "obsolete";
+//             prodID = prodID + "-0";
+//         }
+
+//         products[i, 0] = prodID;
+//     }
+// }
+
+// static string Process1(string[,] products, int item)
+// {
+//     Console.WriteLine($"Process1 message - working on {products[item, 1]} product");
+
+//     return products[item, 1];
+// }
+
+// static string Process2(string[,] products, int item)
+// {
+//     Console.WriteLine($"Process2 message - working on product ID #: {products[item, 0]}");
+//     if (products[item, 1] == "new")
+//         Process3(products, item);
+
+//     return "continue";
+// }
+
+// static void Process3(string[,] products, int item)
+// {
+//     Console.WriteLine($"Process3 message - processing product information for 'new' product");
+// }
+
+// string? readResult;
+// int startIndex = 0;
+// bool goodEntry = false;
+
+// int[] numbers = {1, 2, 3, 4, 5};
+
+// Display the array to the console.
+// Console.Clear();
+// Console.Write("\n\rThe 'numbers' array contains: { ");
+// foreach (int number in numbers)
+// {
+//     Console.Write($"{number} ");
+// }
+
+// To calculate a sum of array elements,
+// prompt the user for the starting element number
+// Console.WriteLine($"}}\n\r\n\rTo sum values 'n' through 5, enter a value for 'n':");
+// while (goodEntry == false) 
+// {
+//     readResult = Console.ReadLine();
+//     goodEntry = int.TryParse(readResult, out startIndex);
+
+//     if (startIndex > 5)
+//     {
+//         goodEntry = false;
+//         Console.WriteLine("\n\rEnter an integer value between 1 and 5");
+//     }
+// }
+
+// Display the sum and then pause.
+// Console.WriteLine($"\n\rThe sum of numbers {startIndex} through {numbers.Length} is: {SumValues(numbers, startIndex - 1)}");
+// Console.WriteLine("press Enter to exit");
+// readResult = Console.ReadLine();
+
+// This method returns the sum of elements n through 5
+// static int SumValues(int[] numbers, int n)
+// {
+//     int sum = 0;
+//     for (int i = n; i < numbers.Length; i++)
+//     {
+//         sum += numbers[i];
+//     }
+//     return sum;
+// }
+
+/*  
+This code instantiates a value and then calls the ChangeValue method
+to update the value. The code then prints the updated value to the console.
+*/
+int x = 5;
+
+ChangeValue(x);
+
+Console.WriteLine(x);
+
+// Declare the method's data type so that the variable can be updated
+int ChangeValue(int value) 
+{
+    value = 10;
+    // Add a return here to ensure that variable given is updated
+    return value;
+}
+
+// Exception handling in C# is implemented by using the try, catch, and finally keywords:
+try
+{   
+   // try code block - code that may generate an exception
+}
+catch
+{   
+   // catch code block - code to handle an exception
+}
+finally
+{   
+   // finally code block - code to clean up resources
+}
+
+// Exception handling in a C# application is generally implemented using one or more of the following patterns:
+
+// - The try-catch pattern consists of a try block followed by one or more catch clauses. 
+//   Each catch block is used to specify handlers for different exceptions.
+// - The try-finally pattern consists of a try block followed by a finally block. 
+//   Typically, the statements of a finally block run when control leaves a try statement.
+// - The try-catch-finally pattern implements all three types of exception handling blocks. 
+//   A common scenario for the try-catch-finally pattern is when resources are obtained and used in a try block, 
+//   exceptional circumstances are managed in a catch block,
+//   and the resources are released or otherwise managed in the finally block.
+
+// When an exception occurs, the .NET runtime searches for the nearest catch clause that can handle the exception
+// Generally, this means looking for any try block that encompasses the exception, then finding the associated catch
+// If no catch clause or try clause is found, the runtime terminates the application and displays an error message instead
+
+// The compiler-generated exceptions are as follows:
+
+// ArrayTypeMismatchException: Thrown when an array can't store a given element because the actual type of the element is incompatible with the actual type of the array.
+// DivideByZeroException: Thrown when an attempt is made to divide an integral value by zero.
+// FormatException: Thrown when the format of an argument is invalid.
+// IndexOutOfRangeException: Thrown when an attempt is made to index an array when the index is less than zero or outside the bounds of the array.
+// InvalidCastException: Thrown when an explicit conversion from a base type to an interface or to a derived type fails at runtime.
+// NullReferenceException: Thrown when an attempt is made to reference an object whose value is null.
+// OverflowException: Thrown when an arithmetic operation in a checked context overflows.

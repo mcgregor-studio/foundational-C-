@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cmcgregor\\Documents\\Coding\\practice\\foundational-C#\\debug-console-apps-module\\debug-console-apps\\debug-console-apps.csproj",
+      "projectUniqueName": "C:\\Users\\cmcgregor\\Documents\\Coding\\practice\\foundational-C-sharp\\debug-console-apps-module\\debug-console-apps\\debug-console-apps.csproj",
       "projectName": "debug-console-apps",
-      "projectPath": "C:\\Users\\cmcgregor\\Documents\\Coding\\practice\\foundational-C#\\debug-console-apps-module\\debug-console-apps\\debug-console-apps.csproj",
+      "projectPath": "C:\\Users\\cmcgregor\\Documents\\Coding\\practice\\foundational-C-sharp\\debug-console-apps-module\\debug-console-apps\\debug-console-apps.csproj",
       "packagesPath": "C:\\Users\\cmcgregor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cmcgregor\\Documents\\Coding\\practice\\foundational-C#\\debug-console-apps-module\\debug-console-apps\\obj\\",
+      "outputPath": "C:\\Users\\cmcgregor\\Documents\\Coding\\practice\\foundational-C-sharp\\debug-console-apps-module\\debug-console-apps\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cmcgregor\\AppData\\Roaming\\NuGet\\NuGet.Config"
