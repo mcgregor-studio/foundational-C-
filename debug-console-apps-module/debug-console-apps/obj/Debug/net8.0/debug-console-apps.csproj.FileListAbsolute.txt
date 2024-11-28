@@ -12,3 +12,4 @@ C:\Users\cmcgregor\Documents\Coding\practice\foundational-C#\debug-console-apps-
 C:\Users\cmcgregor\Documents\Coding\practice\foundational-C#\debug-console-apps-module\debug-console-apps\obj\Debug\net8.0\debug-console-apps.pdb
 C:\Users\cmcgregor\Documents\Coding\practice\foundational-C#\debug-console-apps-module\debug-console-apps\obj\Debug\net8.0\debug-console-apps.genruntimeconfig.cache
 C:\Users\cmcgregor\Documents\Coding\practice\foundational-C#\debug-console-apps-module\debug-console-apps\obj\Debug\net8.0\ref\debug-console-apps.dll
+C:\Users\cmcgregor\Documents\Coding\practice\foundational-C#\debug-console-apps-module\debug-console-apps\obj\Debug\net8.0\debug-console-apps.sourcelink.json
