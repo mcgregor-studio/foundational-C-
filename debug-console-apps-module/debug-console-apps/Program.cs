@@ -519,16 +519,9 @@ catch (DivideByZeroException ex)
    Console.WriteLine("An error occurred during 'UserWorkflow'.");
    Console.WriteLine(ex.Message);
 }
-catch (FormatException ex)
-{
-   Console.WriteLine("An error occurred during 'UserWorkflow'.");
-   Console.WriteLine(ex.Message);
-}
 
 static void UserWorkflow(string[][] userEnteredValues)
 {
-   string operationStatusMessage = "good";
-   string processStatusMessage = "";
 
    foreach (string[] userEntries in userEnteredValues)
    {
@@ -536,17 +529,12 @@ static void UserWorkflow(string[][] userEnteredValues)
       {
          UserProcess(userEntries);
       }
-      catch {
+      catch (FormatException ex) {
          Console.WriteLine("'UserProcess' encountered an issue, process aborted.");
-         Console.WriteLine(processStatusMessage);
+         Console.WriteLine(ex.Message);
+         Console.WriteLine("");
       }
    }
-
-   if (operationStatusMessage == "good")
-   {
-      operationStatusMessage = "operating procedure complete";
-   }
-
 }
 
 static void UserProcess(String[] userEntries)
