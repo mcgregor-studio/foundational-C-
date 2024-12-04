@@ -243,24 +243,24 @@ ChangeValue(x);
 Console.WriteLine(x);
 
 // Declare the method's data type so that the variable can be updated
-int ChangeValue(int value) 
+int ChangeValue(int value)
 {
-    value = 10;
-    // Add a return here to ensure that variable given is updated
-    return value;
+   value = 10;
+   // Add a return here to ensure that variable given is updated
+   return value;
 }
 
 // Exception handling in C# is implemented by using the try, catch, and finally keywords:
 try
-{   
+{
    // try code block - code that may generate an exception
 }
 catch
-{   
+{
    // catch code block - code to handle an exception
 }
 finally
-{   
+{
    // finally code block - code to clean up resources
 }
 
@@ -288,3 +288,280 @@ finally
 // InvalidCastException: Thrown when an explicit conversion from a base type to an interface or to a derived type fails at runtime.
 // NullReferenceException: Thrown when an attempt is made to reference an object whose value is null.
 // OverflowException: Thrown when an arithmetic operation in a checked context overflows.
+
+// Exceptions are all inherited from a base class, System.Exception
+// They don't add any additional functionality from this class
+// These are the properties of the Exception class:
+// Data: The Data property holds arbitrary data in key-value pairs.
+// HelpLink: The HelpLink property can be used to hold a URL (or URN) to a help file that provides extensive information about the cause of an exception.
+// HResult: The HResult property can be used to access to a coded numerical value that's assigned to a specific exception.
+// InnerException: The InnerException property can be used to create and preserve a series of exceptions during exception handling.
+// Message: The Message property provides details about the cause of an exception.
+// Source: The Source property can be used to access the name of the application or the object that causes the error.
+// StackTrace: The StackTrace property contains a stack trace that can be used to determine where an error occurred.
+// TargetSite: The TargetSite property can be used to get the method that throws the current exception.
+
+// In particular, the Message property is important when building your own exceptions
+// Example of looking for a specific exception using catch and showing an appropriate message:
+try
+{
+   Process1();
+}
+catch
+{
+   Console.WriteLine("An exception has occurred");
+}
+
+Console.WriteLine("Exit program");
+
+static void Process1()
+{
+   try
+   {
+      WriteMessage();
+   }
+   catch (DivideByZeroException ex)
+   {
+      // DivideByZeroException ex above is a variable with the Exception.DivideByZeroException data type
+      // This allows you to call on specific properties as necessary
+      // However, this also means it will fail if a different exception type is encountered
+      Console.WriteLine($"Exception caught in Process1: {ex.Message}");
+   }
+}
+
+static void WriteMessage()
+{
+   double float1 = 3000.0;
+   double float2 = 0.0;
+   int number1 = 3000;
+   int number2 = 0;
+   byte smallNumber;
+
+   Console.WriteLine(float1 / float2);
+   Console.WriteLine(number1 / number2);
+   checked
+   {
+      // Try-catch statements can only catch 1 exception, without exception (lol)
+      // It's important to make try-catch statements as close to your potential exceptions as possible, and for all of your potential exceptions
+      try
+      {
+         smallNumber = (byte)number1;
+      }
+      catch (OverflowException ex)
+      {
+         Console.WriteLine($"Exception caught in WriteMessage: {ex.Message}");
+      }
+   }
+}
+
+// You can also use multi-catch statements like below:
+
+string[] inputValues = new string[] { "three", "9999999999", "0", "2" };
+
+foreach (string inputValue in inputValues)
+{
+   int numValue = 0;
+   try
+   {
+      numValue = int.Parse(inputValue);
+   }
+   catch (FormatException)
+   {
+      Console.WriteLine("Invalid readResult. Please enter a valid number.");
+   }
+   catch (OverflowException)
+   {
+      Console.WriteLine("The number you entered is too large or too small.");
+   }
+   catch (Exception ex)
+   {
+      Console.WriteLine(ex.Message);
+   }
+}
+
+checked
+{
+   try
+   {
+      int num1 = int.MaxValue;
+      int num2 = int.MaxValue;
+      int result = num1 + num2;
+      Console.WriteLine("Result: " + result);
+   }
+   catch (OverflowException ex)
+   {
+      Console.WriteLine("Error: The number is too large to be represented as an integer. " + ex.Message);
+   }
+}
+
+// Creating and throwing exceptions from within your code is an important aspect of C# programming
+// The ability to generate an exception in response to a specific condition, issue, or error helps you to ensure the stability of your application
+
+// The exception type that you create depends on the coding issue, and should match the intended purpose of the exception as closely as possible.
+
+// Here are some common exception types that you might use when creating an exception:
+
+// - ArgumentException or ArgumentNullException: 
+//   Use these exception types when a method or constructor is called with an invalid argument value or null reference.
+// - InvalidOperationException: 
+//   Use this exception type when the operating conditions of a method don't support the successful completion of a particular method call.
+// - NotSupportedException: 
+//   Use this exception type when an operation or feature is not supported.
+// - IOException: 
+//   Use this exception type when an input/output operation fails.
+// - FormatException: 
+//   Use this exception type when the format of a string or data is incorrect.
+
+// Some considerations to keep in mind when throwing an exception include:
+
+// - The Message property should explain the reason for the exception. 
+//   However, information that's sensitive, or that represents a security concern shouldn't be put in the message text.
+// - The StackTrace property is often used to track the origin of the exception. 
+//   This string property contains the name of the methods on the current call stack, together with the file name and line number in each method that's associated with the exception. 
+//   A StackTrace object is created automatically by the common language runtime (CLR) from the point of the throw statement
+//   Exceptions must be thrown from the point where the stack trace should begin.
+// - The throw command can also be used to re-throw an exception from inside a catch code block
+
+// The following list identifies practices to avoid when throwing exceptions:
+
+// - Don't use exceptions to change the flow of a program as part of ordinary execution. 
+//   Use exceptions to report and handle error conditions.
+// - Exceptions shouldn't be returned as a return value or parameter instead of being thrown.
+// - Don't throw System.Exception, System.SystemException, System.NullReferenceException, or System.IndexOutOfRangeException intentionally from your own source code.
+// - Don't create exceptions that can be thrown in debug mode but not release mode. 
+//   To identify runtime errors during the development phase, use Debug.Assert instead.
+
+// Guided create an exception challenge
+
+// Prompt the user for the lower and upper bounds
+Console.Write("Enter the lower bound: ");
+int lowerBound = int.Parse(Console.ReadLine());
+
+Console.Write("Enter the upper bound: ");
+int upperBound = int.Parse(Console.ReadLine());
+
+decimal averageValue = 0;
+
+bool exit = false;
+
+do
+{
+   try
+   {
+      // Calculate the sum of the even numbers between the bounds
+      averageValue = AverageOfEvenNumbers(lowerBound, upperBound);
+
+      // Display the value returned by AverageOfEvenNumbers in the console
+      Console.WriteLine($"The average of even numbers between {lowerBound} and {upperBound} is {averageValue}.");
+
+      exit = true;
+   }
+   catch (ArgumentOutOfRangeException ex)
+   {
+      Console.WriteLine("An error has occurred.");
+      Console.WriteLine(ex.Message);
+      Console.WriteLine($"The upper bound must be greater than {lowerBound}");
+      Console.Write($"Enter a new upper bound (or enter Exit to quit): ");
+      string? userResponse = Console.ReadLine();
+      if (userResponse.ToLower().Contains("exit"))
+      {
+         exit = true;
+      }
+      else
+      {
+         exit = false;
+         upperBound = int.Parse(userResponse);
+      }
+   }
+} while (exit == false);
+
+// Wait for user input
+Console.ReadLine();
+
+static decimal AverageOfEvenNumbers(int lowerBound, int upperBound)
+{
+   if (lowerBound >= upperBound)
+      throw new ArgumentOutOfRangeException("upperBound", "ArgumentOutofRangeException: upper bound must be greater than lower bound.");
+
+   int sum = 0;
+   int count = 0;
+   decimal average = 0;
+
+   for (int i = lowerBound; i <= upperBound; i++)
+   {
+      if (i % 2 == 0)
+      {
+         sum += i;
+         count++;
+      }
+   }
+
+   average = (decimal)sum / count;
+
+   return average;
+}
+
+// Create an exception challenge
+
+string[][] userEnteredValues = new string[][]
+{
+            new string[] { "1", "2", "3"},
+            new string[] { "1", "two", "3"},
+            new string[] { "0", "1", "2"}
+};
+
+try
+{
+   UserWorkflow(userEnteredValues);
+}
+catch (DivideByZeroException ex)
+{
+   Console.WriteLine("An error occurred during 'UserWorkflow'.");
+   Console.WriteLine(ex.Message);
+}
+
+static void UserWorkflow(string[][] userEnteredValues)
+{
+
+   foreach (string[] userEntries in userEnteredValues)
+   {
+      try
+      {
+         UserProcess(userEntries);
+      }
+      catch (FormatException ex) {
+         Console.WriteLine("'UserProcess' encountered an issue, process aborted.");
+         Console.WriteLine(ex.Message);
+         Console.WriteLine("");
+      }
+   }
+}
+
+static void UserProcess(String[] userEntries)
+{
+   int valueEntered;
+
+   foreach (string userValue in userEntries)
+   {
+      bool integerFormat = int.TryParse(userValue, out valueEntered);
+
+      if (integerFormat == true)
+      {
+         if (valueEntered != 0)
+         {
+            checked
+            {
+               int calculatedValue = 4 / valueEntered;
+            }
+         }
+         else
+         {
+            throw new DivideByZeroException("Invalid data. User input values must be non-zero values.");
+         }
+      }
+      else
+      {
+         throw new FormatException("Invalid data. User input values must be valid integers.");
+      }
+   }
+}
